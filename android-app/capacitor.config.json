@@ -1,0 +1,28 @@
+{
+  "appId": "br.com.grefinacia",
+  "appName": "Grefinacia",
+  "webDir": "www",
+  "backgroundColor": "#0b0f17",
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_finance",
+      "iconColor": "#22c55e"
+    },
+    "BackgroundRunner": {
+      "label": "br.com.grefinacia.proventos",
+      "src": "runners/background.js",
+      "event": "checkDividends",
+      "repeat": true,
+      "interval": 720,
+      "autoStart": true
+    }
+  }
+}

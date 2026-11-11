@@ -101,3 +101,10 @@ Problemas de conexão com o banco: coloque `APP_DEBUG=1` no `.env` e abra
 
 ## 📄 Licença
 MIT
+
+---
+
+## 📱 App Android (Grefinacia)
+
+A pasta [`android-app/`](android-app/README.md) contém o app Android (Capacitor) do Grefinacia,
+com build automático do APK pelo GitHub Actions (`.github/workflows/android.yml`).
